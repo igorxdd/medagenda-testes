@@ -1,7 +1,11 @@
-# Entrega 2
+﻿# Entrega 2
 
-Prazo: 01/12/2026, ate o inicio da aula.
+Prazo: 01/12/2026, até o início da aula.
 
-Pendente de elaboracao: pelo menos 50 casos no modelo oficial, cobrindo RN01 a RN19, RF, RNF e matriz de permissoes; tecnicas obrigatorias; pelo menos duas sessoes exploratorias com charter e anotacoes; Gherkin para pelo menos tres regras de negocio, incluindo um Esquema do Cenario; matriz de rastreabilidade.
+A desenvolver:
 
-Os testes iniciais do repositorio nao representam esses entregaveis completos. O cenario BDD inicial verifica RF01 e ainda nao satisfaz a exigencia de regras de negocio da entrega.
+- Pelo menos 50 casos de teste cobrindo requisitos, regras e permissões.
+- Aplicação das técnicas de projeto exigidas no enunciado.
+- Pelo menos duas sessões exploratórias com charter e anotações.
+- Gherkin para pelo menos três regras de negócio, incluindo um Esquema do Cenário.
+- Matriz de rastreabilidade.
