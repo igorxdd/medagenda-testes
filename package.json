@@ -1,0 +1,38 @@
+{
+  "name": "medagenda-testes",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Testes e entregas da disciplina Teste de Software para o MedAgenda",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "verify:source": "node scripts/verify-source.mjs",
+    "prepare:reports": "node scripts/prepare-reports.mjs",
+    "typecheck": "tsc --noEmit",
+    "wait:api": "node scripts/wait-api.mjs",
+    "test:api": "node scripts/run-postman.mjs",
+    "test:interface": "playwright test --config tests/interface-playwright/playwright.config.ts",
+    "test:bdd": "npm run prepare:reports && cucumber-js --config tests/bdd-cucumber/cucumber.cjs",
+    "test:a11y": "playwright test --config tests/acessibilidade/playwright.config.ts",
+    "test:smoke": "npm run typecheck && npm run wait:api && npm run test:api && npm run test:interface && npm run test:bdd"
+  },
+  "overrides": {
+    "handlebars": "4.7.10",
+    "lodash": "4.18.1",
+    "qs": "6.17.1",
+    "node-forge": "1.4.3",
+    "flatted": "3.4.4",
+    "underscore": "1.13.8",
+    "jose": "4.15.9"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@cucumber/cucumber": "13.3.0",
+    "@playwright/test": "1.65.0",
+    "@types/node": "26.6.6",
+    "newman": "6.2.3",
+    "ts-node": "10.9.2",
+    "typescript": "5.9.3"
+  }
+}

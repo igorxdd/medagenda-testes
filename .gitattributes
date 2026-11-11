@@ -1,0 +1,10 @@
+* text=auto
+*.sh text eol=lf
+*.yml text eol=lf
+*.feature text eol=lf
+*.pdf binary
+*.docx binary
+api/** -text
+web/** -text
+docker-compose.yml -text
+docs/referencias/README-aplicacao.md -text
