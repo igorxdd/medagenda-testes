@@ -33,7 +33,7 @@ As instruções completas e as contas fictícias estão no [README original](doc
 | `tests/desempenho-k6/` | k6 |
 | `tests/acessibilidade/` | axe e Playwright |
 
-As pastas estão reservadas para implementação posterior. Ainda não há casos, configurações ou dependências das ferramentas de teste.
+O [BDD](tests/bdd-cucumber/) já contém cenários Gherkin associados às Issues #1 a #4 e um cenário adicional de validação de CPF. Os passos, os executores e as dependências das ferramentas ainda serão implementados. As demais pastas permanecem reservadas para desenvolvimento posterior.
 
 ## Pipeline
 
